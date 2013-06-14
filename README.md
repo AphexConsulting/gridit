@@ -1,6 +1,8 @@
 # gridit.less
 
-A grid-only LESS stylesheet. Lays out HTML elements on a [typographic grid](http://en.wikipedia.org/wiki/Grid_(graphic_design)).
+A grid-only LESS stylesheet. Lays out HTML elements on a [typographic grid][1].
+
+  [1]: http://en.wikipedia.org/wiki/Grid_(graphic_design)
 
 ## Installing
 
