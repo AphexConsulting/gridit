@@ -80,6 +80,12 @@ to have a 3x3 area for an image on the left and a group of 1x1 action buttons fo
 </div>
 ```
 
+## Roadmap
+
+At least these things should be added:
+- *Responsiveness*, making the grid layout work differently on different devices
+- *Fixed width body*, currently the grid takes as much space as the display has, making it close to impossible for the developer to know what will happen
+
 # License
 
 The library is licensed under the MIT-license:
