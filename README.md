@@ -57,7 +57,17 @@ Use rows to create columns of grids. They work more or less like the <td> tag in
 
 ### Configuring
 
-TODO
+You can configure the following parameters in the less-file that includes gridit.less:
+
+* *@pageMarginTop*, the amount of margin given to the whole page
+* *@pageMarginBottom*, the amount of margin given to the whole page
+* *@pageMarginLeft*, the amount of margin given to the whole page
+* *@pageMarginRight*, the amount of margin given to the whole page
+
+* *@boxSize*, define the size of the grid cell (sets the boxWidth and boxHeight simultaneously)
+* *@boxWidth*, define the width of the grid cell 
+* *@boxHeight*, define the height of the grid cell 
+* *@boxMargin*, define the margin of the grid cell 
 
 ### Nested grids
 
