@@ -63,7 +63,6 @@ You can configure the following parameters in the less-file that includes gridit
 * *@pageMarginBottom*, the amount of margin given to the whole page
 * *@pageMarginLeft*, the amount of margin given to the whole page
 * *@pageMarginRight*, the amount of margin given to the whole page
-
 * *@boxSize*, define the size of the grid cell (sets the boxWidth and boxHeight simultaneously)
 * *@boxWidth*, define the width of the grid cell 
 * *@boxHeight*, define the height of the grid cell 
