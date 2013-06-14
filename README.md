@@ -19,9 +19,11 @@ Later if we get enough of these kinds of requests we might automate the precompi
 
 ```LESS
 @import 'reset.css';
-@import '../grid.less';
+@import 'grid.less';
 
-body { background: lighten(cyan, 77%); }
+body {
+  background: lighten(cyan, 77%);
+}
 ```
 
 ```HTML
