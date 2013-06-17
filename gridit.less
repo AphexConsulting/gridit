@@ -1,64 +1,61 @@
-@pageMarginTop: 60px;
-@pageMarginBottom: @pageMarginTop;
-@pageMarginLeft: 60px;
-@pageMarginRight: @pageMarginLeft;
 
-@boxSize: 160px;
-@boxWidth: @boxSize;
-@boxHeight: @boxSize;
-@boxMargin: 20px;
-
-@gridWidth: 12;
-
-body {
-  margin: @pageMarginTop @pageMarginRight @pageMarginBottom @pageMarginLeft;
+// Shortcut helper.
+.gridit(@pageMargin:60px, @boxSize:160px, @boxMargin:20px) {
+  .gridit(@pageMargin, @pageMargin, @pageMargin, @pageMargin, @boxSize, @boxSize, @boxMargin, @boxMargin, @boxMargin, @boxMargin);
 }
 
-.cell(@width: 1) {
-  width: @boxWidth * @width + @boxMargin * (@width - 1);
-  height: 100%;
-  float: left;
-  overflow: hidden;
-
-  &:not(:last-child) {
-    margin-right: @boxMargin;
+.gridit(@pageMarginTop, @pageMarginRight, @pageMarginBottom, @pageMarginLeft, @boxWidth, @boxHeight, @boxMarginTop, @boxMarginRight, @boxMarginBottom, @boxMarginLeft) {
+  & {
+    margin: @pageMarginTop @pageMarginRight @pageMarginBottom @pageMarginLeft;
   }
-}
 
-.row(@height: 1) {
-  width: 100%;
-  height: @boxHeight * @height + @boxMargin * (@height - 1);
-  
-  float: none;
-  overflow: hidden;
+  .cell(@width: 1) {
+    width: @boxWidth * @width + @boxMargin * (@width - 1);
+    height: 100%;
+    float: left;
+    overflow: hidden;
 
-  &:not(:last-child) {
-    margin-bottom: @boxMargin;
+    &:not(:last-child) {
+      margin-right: @boxMargin;
+    }
   }
+
+  .row(@height: 1) {
+    width: 100%;
+    height: @boxHeight * @height + @boxMargin * (@height - 1);
+
+    float: none;
+    overflow: hidden;
+
+    &:not(:last-child) {
+      margin-bottom: @boxMargin;
+    }
+  }
+
+  .cell1 { .cell(1); }
+  .cell2 { .cell(2); }
+  .cell3 { .cell(3); }
+  .cell4 { .cell(4); }
+  .cell5 { .cell(5); }
+  .cell6 { .cell(6); }
+  .cell7 { .cell(7); }
+  .cell8 { .cell(8); }
+  .cell9 { .cell(9); }
+  .cell10 { .cell(10); }
+  .cell11 { .cell(11); }
+  .cell12 { .cell(12); }
+
+  .row1 { .row(1); }
+  .row2 { .row(2); }
+  .row3 { .row(3); }
+  .row4 { .row(4); }
+  .row5 { .row(5); }
+  .row6 { .row(6); }
+  .row7 { .row(7); }
+  .row8 { .row(8); }
+  .row9 { .row(9); }
+  .row10 { .row(10); }
+  .row11 { .row(11); }
+  .row12 { .row(12); }
 }
 
-.cell1 { .cell(1); }
-.cell2 { .cell(2); }
-.cell3 { .cell(3); }
-.cell4 { .cell(4); }
-.cell5 { .cell(5); }
-.cell6 { .cell(6); }
-.cell7 { .cell(7); }
-.cell8 { .cell(8); }
-.cell9 { .cell(9); }
-.cell10 { .cell(10); }
-.cell11 { .cell(11); }
-.cell12 { .cell(12); }
-
-.row1 { .row(1); }
-.row2 { .row(2); }
-.row3 { .row(3); }
-.row4 { .row(4); }
-.row5 { .row(5); }
-.row6 { .row(6); }
-.row7 { .row(7); }
-.row8 { .row(8); }
-.row9 { .row(9); }
-.row10 { .row(10); }
-.row11 { .row(11); }
-.row12 { .row(12); }
