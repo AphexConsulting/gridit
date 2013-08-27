@@ -1,10 +1,10 @@
 
 // Shortcut helper.
 .gridit(@pageMargin:60px, @boxSize:160px, @boxMargin:20px) {
-  .gridit(@pageMargin, @pageMargin, @pageMargin, @pageMargin, @boxSize, @boxSize, @boxMargin, @boxMargin, @boxMargin, @boxMargin);
+  .gridit(@pageMargin, @pageMargin, @pageMargin, @pageMargin, @boxSize, @boxSize, @boxMargin, @boxMargin);
 }
 
-.gridit(@pageMarginTop, @pageMarginRight, @pageMarginBottom, @pageMarginLeft, @boxWidth, @boxHeight, @boxMarginTop, @boxMarginRight, @boxMarginBottom, @boxMarginLeft) {
+.gridit(@pageMarginTop, @pageMarginRight, @pageMarginBottom, @pageMarginLeft, @boxWidth, @boxHeight, @boxMarginHeight, @boxMarginWidth) {
   & {
     margin: @pageMarginTop @pageMarginRight @pageMarginBottom @pageMarginLeft;
   }
@@ -12,19 +12,19 @@
   .cell(@width: 1) {
     overflow: hidden;
     position: relative;
-    width: @boxWidth * @width + @boxMargin * (@width - 1);
+    width: @boxWidth * @width + @boxMarginWidth * (@width - 1);
     height: inherit;
     padding-bottom: inherit;
     float: left;
 
     &:not(:last-child) {
-      margin-right: @boxMargin;
+      margin-right: @boxMarginWidth;
     }
   }
 
   .row(@height: 1) {
     width: 100%;
-    padding-bottom: @boxHeight * @height + @boxMargin * (@height - 1);
+    padding-bottom: @boxHeight * @height + @boxMarginHeight * (@height - 1);
     height: 0;
     position: relative;
 /*    height: @boxHeight * @height + @boxMargin * (@height - 1);*/
@@ -33,7 +33,7 @@
     overflow: hidden;
 
     &:not(:last-child) {
-      margin-bottom: @boxMargin;
+      margin-bottom: @boxMarginHeight;
     }
   }
 
